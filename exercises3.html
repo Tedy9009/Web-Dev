@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>J's Gallery</title>
+<style>
+  :root{
+    --bg:#d9d9d9;      
+    --text:#111;
+    --link:#0000EE;
+    --card-border:#bfbfbf;
+  }
+
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);}
+  body{font-family: "Times New Roman", Times, Georgia, serif; line-height:1.5;}
+
+  header{padding:22px 10px 10px;}
+  .title{
+    font-size:88px;
+    font-weight:800;
+    text-align:center;
+    margin:0 0 8px 0;
+  }
+  nav{
+    text-align:center;
+    margin-bottom:18px;
+  }
+  nav a{
+    color:var(--link);
+    text-decoration:underline;
+    margin:0 18px;
+    font-size:18px;
+  }
+
+  .intro{
+    max-width:980px;
+    margin:0 auto 18px;
+    display:grid;
+    grid-template-columns: 1fr 380px;
+    gap:28px;
+    align-items:start;
+    padding:0 12px;
+  }
+  .intro p{margin:0 0 16px; font-size:26px;}
+  .framed{
+    background:#eee;
+    border:2px solid var(--card-border);
+    box-shadow:0 0 6px rgba(0,0,0,.15);
+    width:620px; height:630px;
+    object-fit:cover; object-position:center;
+    display:block;
+  }
+
+  .gallery{
+    max-width:1200px;
+    margin:0 auto 40px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:0; 
+  }
+  .gallery figure{margin:0;}
+  .gallery img, .gallery video{
+    width:130%;
+    height:260px;          
+    object-fit:cover;
+    display:block;
+  }
+
+  @media (max-width:900px){
+    .intro{grid-template-columns:1fr;}
+    .framed{width:100%; height:60;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1 class="title">J's Gallery</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Gallery</a>
+  </nav>
+</header>
+
+<section class="intro">
+  <div>
+    <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Praesent mollis adipiscing per id libero libero. Tempus pretium metus molestie scelerisque facilisis tristique volutpat ultricies. Nostra ligula ac pulvinar rutrum non rhoncus mauris facilisi. Quisque maximus commodo sollicitudin, montes congue imperdiet. Est malesuada vivamus vestibulum ante aenean class. Per integer aptent ullamcorper sagittis posuere dignissim morbi scelerisque. Fringilla primis sagittis lorem erat integer; vulputate nullam. Porta purus habitant id fermentum nec ex, proin mauris sem.</p>
+    <p>Lectus ultrices nibh lobortis tempus facilisis sit conubia taciti. Non torquent amet nibh elit ante fermentum praesent cras. Et suspendisse egestas eros erat aptent sollicitudin. Nulla tortor purus posuere auctor himenaeos malesuada. Turpis phasellus enim venenatis aliquam pellentesque senectus, id ultrices. Praesent tellus consequat phasellus cubilia mattis mauris natoque litora. Fringilla cursus montes inceptos nec venenatis platea.</p>
+  </div>
+
+  <img class="framed" alt="c:\Users\pench\Desktop\dev ass picture\COW.jpg"
+       src="c:\Users\pench\Desktop\dev ass picture\COW.jpg">
+</section>
+
+<section class="gallery">
+  <figure>
+    <video controls preload="metadata" poster="c:\Users\pench\Desktop\dev ass picture\video.mp4">
+      <source src="c:\Users\pench\Desktop\dev ass picture\video.mp4" type="video/mp4" />
+      
+    </video>
+  </figure>
+
+  <figure>
+    <img alt="Foggy lights over rails"
+         src="c:\Users\pench\Desktop\dev ass picture\img4598.jpg" />
+  </figure>
+
+  <figure>
+    <img alt="Vintage camera close-up"
+         src="c:\Users\pench\Desktop\dev ass picture\img4532.jpg" />
+  </figure>
+
+  <figure>
+    <img alt="Snowy mountain with trees"
+         src="c:\Users\pench\Desktop\dev ass picture\photo_2018_02_01.jpg" />
+  </figure>
+
+  <figure>
+    <img alt="Rolling hills landscape"
+         src="c:\Users\pench\Desktop\dev ass picture\photo_2018_02_31.jpg" />
+  </figure>
+
+  <figure>
+    <img alt="Old building with vintage car"
+         src="c:\Users\pench\Desktop\dev ass picture\johns car jpg.jpg" />
+  </figure>
+</section>
+
+</body>
+</html>
